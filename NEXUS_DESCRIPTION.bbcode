@@ -1,0 +1,85 @@
+[size=5][b]Quiet Lands[/b][/size]
+
+[i]Walk peacefully through the Lands Between.[/i]
+
+Quiet Lands transforms Elden Ring into a peaceful exploration experience. Enemies ignore you. Bosses stand down. You take no damage. The world's beauty, architecture, and lore are yours to discover without the constant threat of death.
+
+Enemies still fight each other - they just can't see you.
+
+[size=4][b]The Talisman: Grace Given Freely[/b][/size]
+
+The mod adds a custom talisman called [b]Grace Given Freely[/b] to your starting inventory. While equipped, it grants:
+
+[list]
+[*][b]Full invisibility[/b] - enemies can't see or hear you
+[*][b]Complete invulnerability[/b] - zero damage from all sources, no fall damage
+[*][b]Status immunity[/b] - immune to poison, scarlet rot, bleed, frostbite, death blight, sleep, and madness
+[*][b]999x damage multiplier[/b] - one-shot anything if you choose to fight
+[*][b]noDead[/b] - cannot die even if something bypasses the above
+[/list]
+
+Unequip the talisman to return to normal gameplay at any time.
+
+[quote]A talisman suffused with the warm light of Grace,
+of the kind that once guided the Tarnished.
+Enemies cannot perceive the wearer at all,
+and all harm slides away like rain from gold leaf.
+Grace, it seems, was never meant to guide
+the Tarnished toward battle -
+only toward the beauty that waited beyond it.[/quote]
+
+[size=4][b]Peaceful Bosses[/b][/size]
+
+All 154 boss NPCs have been set to Neutral team type. Even when you enter a boss arena and trigger their activation scripts, they will not attack. This is a permanent change in the regulation.bin - bosses are peaceful regardless of whether you wear the talisman.
+
+[size=4][b]Known Quirks[/b][/size]
+
+[list]
+[*][b]Dogs, wolves, and beast-type enemies[/b] may still bark/react to you via proximity detection, but they cannot hurt you
+[*][b]NPC invaders[/b] may still appear in certain areas (they're triggered by events, not detection)
+[*][b]Friendly NPCs[/b] are unaffected - merchants, quest-givers, and allies behave normally
+[/list]
+
+[size=4][b]Installation[/b][/size]
+
+Requires [url=https://github.com/soulsmods/ModEngine2/releases]ModEngine2[/url].
+
+[list=1]
+[*]Install ModEngine2 for Elden Ring (replace start_protected_game.exe with modengine2_launcher.exe, keep a backup)
+[*]Extract the zip into ModEngine2's mod/ folder so the structure is:
+[code]Game/
+  mod/
+    regulation.bin
+    msg/
+      engus/
+        item_dlc02.msgbnd.dcx[/code]
+[*]Launch the game through Steam as normal
+[/list]
+
+[size=4][b]Compatibility[/b][/size]
+
+[list]
+[*][b]Requires Shadow of the Erdtree DLC[/b] - the mod uses DLC param rows and text files
+[*]Built against Elden Ring version 1.16
+[*]Modifies: SpEffectParam, EquipParamAccessory, CharaInitParam, NpcParam
+[*]Modifies: item_dlc02.msgbnd.dcx (AccessoryName/Info/Caption FMG files)
+[*]Should be compatible with other mods that don't modify these specific param rows
+[/list]
+
+[size=4][b]Included: Quest-Breaking Triggers Guide[/b][/size]
+
+Since this mod lets you go anywhere from the start, it's easy to accidentally break NPC questlines by entering areas too early. Elden Ring silently advances or fails quests based on where you've been, which bosses you've killed, and which graces you've rested at.
+
+The zip includes [b]QUEST_BREAK_TRIGGERS.md[/b] - a comprehensive guide covering every NPC questline, what actions break them, a safe progression order, and spoiler-light descriptions of who each NPC is and where to find them. Highly recommended reading before you wander too far.
+
+[size=4][b]Credits[/b][/size]
+
+[list]
+[*][url=https://github.com/soulsmods/ModEngine2]ModEngine2[/url] by the DSMS Team - mod loading framework
+[*][url=https://github.com/vawser/Smithbox]Smithbox[/url] by Vawser - paramdef definitions used to identify field offsets
+[*][url=https://github.com/soulsmods/DSMapStudio]DSMapStudio / SoulsFormats[/url] by the DSMS Team - DCX compression format reference
+[*][url=https://github.com/McSimp/linoodle]linoodle[/url] by McSimp - Oodle Kraken compression on Linux
+[*][url=https://web.archive.org/web/2004/http://bhruic.mine.nu/]Bhruic's Save Editor[/url] - inspiration for binary format reverse engineering approach
+[/list]
+
+Built with love for a game that deserves to be seen, not just survived.

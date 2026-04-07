@@ -1,0 +1,33 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Encryption keys (not redistributable)
+keys/
+
+# Built mod artifacts (contain copyrighted game data)
+mod/
+*.zip
+
+# Third-party binaries (Oodle compression)
+libkraken.so
+liblinoodle.so
+oo2core_6_win64.dll
+ooz
+
+# IDE
+.idea/
+
+# Working files
+work/
+
+# Release artifacts and third-party tools
+release/
+tools/

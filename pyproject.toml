@@ -1,0 +1,13 @@
+[project]
+name = "quietlands"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pycryptodome>=3.23.0",
+    "soulstruct",
+]
+
+[tool.uv.sources]
+soulstruct = { git = "https://github.com/Grimrukh/soulstruct.git" }
